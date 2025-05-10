@@ -533,7 +533,7 @@ h1, h2, h3, h4, h5, h6, figure {
   left: 50%;
   margin-left: -21px;
   background-color: #FF9000;
-  z-index: 100;
+  z-index: 101;
   display: table;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -1288,6 +1288,160 @@ input[type="text"] {
 
 .js .animate-box {
   opacity: 0;
+}
+
+/* Modern Project Styles */
+.modern-project {
+  margin-bottom: 30px;
+  background-color: #fff; /* Light background for the card */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden; /* Ensures the image corners are also rounded */
+}
+
+.modern-project:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+.modern-project-link {
+  display: block;
+  text-decoration: none;
+  color: inherit; /* Inherits text color, useful if you have global link styles */
+}
+
+.modern-project-image-wrapper {
+  width: 100%;
+  height: 250px; /* Increased height for larger images */
+  overflow: hidden; /* Clips the image to fit the wrapper */
+  background-color: #f0f0f0; /* Fallback background color */
+}
+
+.modern-project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Scales the image to cover the wrapper, cropping if necessary */
+  transition: transform 0.3s ease;
+}
+
+.modern-project:hover .modern-project-image {
+  transform: scale(1.05); /* Slight zoom effect on the image on hover */
+}
+
+.modern-project-title {
+  padding: 15px;
+  text-align: center;
+}
+
+.modern-project-title h3 {
+  font-size: 18px; /* Adjusted font size for project titles */
+  color: #333; /* Darker color for better readability */
+  margin: 0; /* Removes default margin */
+}
+
+/* Adjust col-padding for the new project items if necessary */
+#fh5co-work .col-padding {
+  padding: 15px !important; /* Add more space between project cards */
+}
+
+/* About Me Card Styles */
+.about-me-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin-bottom: 30px; /* Space below the card */
+  overflow: hidden; /* Clearfix for floated children like col-md-4 and col-md-8 */
+}
+
+.about-me-card .info {
+  margin-bottom: 20px; /* Space below the info block if content wraps */
+}
+
+.about-me-card h2 {
+  margin-top: 0; /* Adjust if h2 has too much top margin */
+}
+
+/* Cat Gallery and Cat Card Styles */
+.cat-gallery {
+  margin-top: 20px; /* Space above the cat gallery */
+  margin-bottom: 20px; /* Space below the cat gallery */
+}
+
+.cat-card {
+  background-color: #f9f9f9; /* Slightly different background for cat cards */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  margin-bottom: 20px; /* Space between cat cards if they stack on smaller screens */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cat-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cat-card img {
+  border-radius: 4px; /* Rounded corners for cat images */
+  margin-bottom: 10px; /* Space between image and caption */
+}
+
+.cat-card figcaption {
+  font-size: 14px;
+  color: #555;
+  text-align: center;
+}
+
+/* Resume Card Styles */
+.timeline-panel.resume-card {
+  background-color: #fff;
+  border: 1px solid #e9ecef; /* Lighter border for resume cards */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Softer shadow */
+  padding: 20px; /* Add padding inside the resume card */
+  position: relative; /* Ensure proper stacking and layout within timeline */
+  margin-left: 0; /* Reset any specific timeline panel margins if needed */
+  margin-right: 0; /* Reset any specific timeline panel margins if needed */
+}
+
+/* Adjustments for timeline elements to fit the card style */
+.timeline > li > .timeline-panel.resume-card:before {
+  /* Adjust or remove if the default arrow doesn't fit the card style */
+  display: none; /* Example: hiding the default arrow */
+}
+
+.timeline > li > .timeline-panel.resume-card:after {
+    /* Adjust or remove if the default arrow doesn't fit the card style */
+  display: none; /* Example: hiding the default arrow */
+}
+
+/* Ensure timeline badge is visually coherent with cards */
+.timeline > li > .timeline-badge {
+  z-index: 101; /* Make sure badge is above the card */
+}
+
+/* Modern Footer Styles */
+#fh5co-footer.modern-footer {
+  background-color: #2F3C4F; /* Dark background similar to header or projects */
+  color: #f0f0f0; /* Light text color for contrast */
+  padding: 40px 0; /* Adjust padding as needed */
+  text-align: center;
+}
+
+#fh5co-footer.modern-footer p {
+  margin-bottom: 15px; /* Space between paragraph and social icons */
+  font-size: 14px;
+  color: #ccc; /* Slightly dimmer color for copyright text */
+}
+
+#fh5co-footer.modern-footer .fh5co-social-icons li a {
+  color: #f0f0f0; /* Light color for social icons */
+}
+
+#fh5co-footer.modern-footer .fh5co-social-icons li a:hover {
+  color: #FF9000; /* Accent color on hover */
 }
 
 /*# sourceMappingURL=style.css.map */
