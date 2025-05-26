@@ -1,3 +1,4 @@
 server.crt
 server.key
 .DS_Store
+.firebaserc
