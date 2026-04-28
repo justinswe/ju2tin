@@ -11,6 +11,7 @@
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="https://api.github.com">
 	<link href="https://fonts.googleapis.com/css?family=Space+Mono&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
 
@@ -133,6 +134,45 @@
 			margin-right: 4px;
 		}
 
+		/* Skeleton Loading Cards */
+		@keyframes skeleton-pulse {
+			0% { opacity: 0.6; }
+			50% { opacity: 0.3; }
+			100% { opacity: 0.6; }
+		}
+		.skeleton-card {
+			background: #1e293b;
+			border: 1px solid rgba(255, 255, 255, 0.05);
+			border-radius: 12px;
+			overflow: hidden;
+			height: 100%;
+			min-height: 340px;
+			animation: skeleton-pulse 1.5s ease-in-out infinite;
+		}
+		.skeleton-card .skeleton-image {
+			width: 100%;
+			height: 180px;
+			background: #0f172a;
+		}
+		.skeleton-card .skeleton-body {
+			padding: 24px;
+		}
+		.skeleton-card .skeleton-line {
+			height: 14px;
+			background: rgba(255, 255, 255, 0.06);
+			border-radius: 4px;
+			margin-bottom: 12px;
+		}
+		.skeleton-card .skeleton-line.short {
+			width: 60%;
+		}
+		.skeleton-card .skeleton-line.medium {
+			width: 85%;
+		}
+		.skeleton-card .skeleton-line.long {
+			width: 100%;
+		}
+
 		/* Global Canvas & Icons Extension */
 		.fh5co-cover .overlay {
 			background: rgba(15, 23, 42, 0.85) !important; /* Replacing flat orange with chic deep slate transparent overlay */
@@ -223,25 +263,25 @@
 						<p>I have had the privilege of making a real business impact at great organizations. At Apex, I've architected CI/CD pipelines, leveraging unique characteristics of the Bazel build system resulting in a 65%+ P50 improvement, and 80% P90 improvement. Similarly, designed microservices, and systems for orchestrating deployment, creation of manifests and configs for a GitOps pattern. The systems also scaled effectively under load in a 15+ million line codebase handling 500+ builds of 600+ applications, and 1000+ deployments daily in a monorepo.</p>
             <p>Moreover, as a Systems Engineer at Oregon State's Open Source Lab, I designed, and deployed critical infrastructure for more than 100 clients, including the Linux Foundation and Apache Software. Highlight being implementing end-to-end the multi-zonal automatic failover of distributed PostgreSQL databases impacting over 150 organizations.</p>
 						
-						<p>When I'm not at my keyboard, I'm dedicated to exploring emerging technologies, managing my home server lab, following Formula 1 racing, and hiking throughout the Pacific Northwest.</p>
+						<p>When I'm not learning new technologies, or patterns; I'm often managing my home lab, following Formula 1 racing, or hiking throughout the Pacific Northwest.</p>
 
 						<!-- Start cats -->
 						<div class="row cat-gallery">
 							<div class="col-md-4">
 								<figure class="cat-card">
-									<img src="images/fish.jpg" alt="fish" style="width:100%" loading="lazy">
+									<img src="images/fish.jpg" alt="fish" width="3024" height="4032" style="width:100%;height:auto" loading="lazy">
 									<figcaption>Fish</figcaption>
 								</figure>
 							</div>
 							<div class="col-md-4">
 								<figure class="cat-card">
-									<img src="images/milo.jpg" alt="milo" style="width:100%" loading="lazy">
+									<img src="images/milo.jpg" alt="milo" width="4284" height="5712" style="width:100%;height:auto" loading="lazy">
 									<figcaption>Milo</figcaption>
 								</figure>
 							</div>
 							<div class="col-md-4">
 								<figure class="cat-card">
-									<img src="images/ramen.jpg" alt="ramen" style="width:100%" loading="lazy">
+									<img src="images/ramen.jpg" alt="ramen" width="4284" height="5712" style="width:100%;height:auto" loading="lazy">
 									<figcaption>Ramen</figcaption>
 								</figure>
 							</div>
@@ -281,7 +321,7 @@
 									<span class="company">Apex Fintech Solutions - Nov 2024 - Current</span>
 								</div>
 								<div class="timeline-body">
-									<p>Leveraging Go, Bazel, and infrastructure as code tools on the Developer experience team. </p>
+									<p>Lead multiple initivatives: Architected CI/CD improving build/test by up to 80%; standardized container creation across Go, Java, Typescript, and Python; team Bazel, and build-system SME on the DevEx team. </p>
 								</div>
 							</div>
 						</li>
@@ -307,7 +347,7 @@
 									<span class="company">Oregon State University - Nov 2022 - August 2024</span>
 								</div>
 								<div class="timeline-body">
-									<p>Previously working for Open Source Labs has taught immeasurable amounts about working with infrastructure. The day to day involved managing and deploying virtualized environments for clients through the infrastructure-as-code tool Chef. In addition, to deploying higher profile projects such as a high-availability PostgreSQL cluster with automatic failover capabilites.</p>
+									<p>Open Source Labs has taught immeasurably about working with infrastructure. The day to day involved managing and deploying virtualized environments for clients through the configuration management tool Chef. In addition, to deploying higher profile projects such as a high-availability PostgreSQL cluster with automatic failover capabilites.</p>
 								</div>
 							</div>
 						</li>
@@ -317,22 +357,10 @@
 							<div class="timeline-panel resume-card">
 								<div class="timeline-heading">
 									<h3 class="timeline-title">Software Engineer</h3>
-									<span class="company">Lithia and Driveway - Sep 2022 - Nov 2022</span>
+									<span class="company">Lithia and Driveway - Jun 2022 - Nov 2022</span>
 								</div>
 								<div class="timeline-body">
-									<p>Part-time role while attending University full-time. Whilst there I focused on back-end and system development. Unfortunately, this was short-lived as the position was eliminated during a reorganization due to macro economic conditions.</p>
-								</div>
-							</div>
-						</li>
-						<li class="animate-box timeline-unverted">
-							<div class="timeline-badge"><i class="icon-suitcase"></i></div>
-							<div class="timeline-panel resume-card">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Software Engineer Intern</h3>
-									<span class="company">Lithia and Driveway - Jun 2022 - Sep 2022</span>
-								</div>
-								<div class="timeline-body">
-									<p>During my internship I worked as a part of a team developing internal tools supporting business critical operations such as processing loans/liens. Specifically, I developed APIs for these operations.</p>
+									<p>Designed back-end systems revolving around business critical operations such as account management, and loans/liens processing. Specifically, I developed APIs for these operations.</p>
 								</div>
 							</div>
 						</li>
@@ -344,7 +372,7 @@
 									<span class="company">Coding with Kids - Mar 2019 - Feb 2020</span>
 								</div>
 								<div class="timeline-body">
-									<p>I was an Instructor teaching programming fundamentals throughout my senior year of high school. I had the opportunity to teach at a variety of schools around and in the greater Portland area. The majority of my time was spent both developing curriculum and teaching to youth concepts ranging from basic conditionals to programming Arduinos in C. </p>
+									<p>Taught programming fundamentals at a variety of schools around and in the greater Portland area. The majority of my time was spent both developing curriculum and teaching to youth concepts ranging from basic conditionals to programming Arduinos in C. </p>
 								</div>
 							</div>
 						</li>
@@ -360,7 +388,7 @@
 									<span class="company">Oregon State University - 2020 - 2024</span>
 								</div>
 								<div class="timeline-body">
-									<p>Majoring in Computer Science with applied option in web and mobile application development.</p>
+									<p>Computer Science with a focus on web application development. Relevant coursework included creating the following from scratch, Operating System, SQL & NoSQL DBMS, as well as algorithms courses.</p>
 								</div>
 							</div>
 						</li>
@@ -372,7 +400,7 @@
 									<span class="company">Clackamas High School - 2016 - 2020</span>
 								</div>
 								<div class="timeline-body">
-									<p>Three years of Electronics & Programming and Coding.</p>
+									<p>Electronics, Programming and Coding through all four years.</p>
 								</div>
 							</div>
 						</li>
@@ -390,11 +418,12 @@
 				</div>
 			</div>
 			<div class="row" id="github-projects-container">
-				<div class="col-md-12 text-center">
-					<div class="spinner-border text-light" role="status" style="margin-top: 20px;">
-						<span class="sr-only">Loading pinned projects...</span>
-					</div>
-				</div>
+				<div class="col-md-4 col-padding" id="skeleton-0"><div class="skeleton-card"><div class="skeleton-image"></div><div class="skeleton-body"><div class="skeleton-line short"></div><div class="skeleton-line long"></div><div class="skeleton-line medium"></div></div></div></div>
+				<div class="col-md-4 col-padding" id="skeleton-1"><div class="skeleton-card"><div class="skeleton-image"></div><div class="skeleton-body"><div class="skeleton-line short"></div><div class="skeleton-line long"></div><div class="skeleton-line medium"></div></div></div></div>
+				<div class="col-md-4 col-padding" id="skeleton-2"><div class="skeleton-card"><div class="skeleton-image"></div><div class="skeleton-body"><div class="skeleton-line short"></div><div class="skeleton-line long"></div><div class="skeleton-line medium"></div></div></div></div>
+				<div class="col-md-4 col-padding" id="skeleton-3"><div class="skeleton-card"><div class="skeleton-image"></div><div class="skeleton-body"><div class="skeleton-line short"></div><div class="skeleton-line long"></div><div class="skeleton-line medium"></div></div></div></div>
+				<div class="col-md-4 col-padding" id="skeleton-4"><div class="skeleton-card"><div class="skeleton-image"></div><div class="skeleton-body"><div class="skeleton-line short"></div><div class="skeleton-line long"></div><div class="skeleton-line medium"></div></div></div></div>
+				<div class="col-md-4 col-padding" id="skeleton-5"><div class="skeleton-card"><div class="skeleton-image"></div><div class="skeleton-body"><div class="skeleton-line short"></div><div class="skeleton-line long"></div><div class="skeleton-line medium"></div></div></div></div>
 			</div>
 		</div>
 	</div>
@@ -440,11 +469,7 @@
 				yearSpan.textContent = new Date().getFullYear();
 			}
 
-			// Fetch GitHub Pinned Repos
-			const container = document.getElementById("github-projects-container");
-			
-			// These are the projects currently pinned at https://github.com/justinswe
-			// We define them here to ensure reliable fetching without rate-limited 3rd party proxies
+			// Pinned repos config — used for both fetching and fallback rendering
 			const pinnedRepos = [
 				{ repo: "sous-chefs/postgresql", fallbackImage: "images/postgresql.png" },
 				{ repo: "justinswe/rules_cloudrun", fallbackImage: "images/bzl.png" },
@@ -454,53 +479,59 @@
 				{ repo: "bazelbuild/bazel-central-registry", fallbackImage: "images/bzl.png" }
 			];
 
-			if (container) {
-				Promise.all(
-					pinnedRepos.map(pin => 
-						fetch(`https://api.github.com/repos/${pin.repo}`)
-							.then(res => {
-								if (!res.ok) throw new Error("API Limit or Repo missing");
-								return res.json();
-							})
-							.then(data => ({ ...data, customImage: pin.fallbackImage }))
-							.catch(err => {
-								console.error("Error fetching repo:", pin.repo, err);
-								return null;
-							})
-					)
-				).then(repos => {
-					container.innerHTML = ''; // Clear loading
-					repos.filter(Boolean).forEach(repo => {
-						// Create project card
-						const col = document.createElement("div");
-						col.className = "col-md-4 col-padding animated fadeInUp";
-						
-						// Prefer custom local image, fallback to GitHub avatar
-						const imgUrl = repo.customImage || repo.owner.avatar_url;
-						
-						col.innerHTML = `
-							<div class="modern-project">
-								<a href="${repo.html_url}" target="_blank" rel="noopener noreferrer" class="modern-project-link">
-									<div class="modern-project-image-wrapper">
-										<img src="${imgUrl}" alt="${repo.name}" class="modern-project-image" loading="lazy">
-									</div>
-									<div class="modern-project-title">
-										<h3>${repo.name}</h3>
-										<p>${repo.description || 'GitHub Repository'}</p>
-										<div class="repo-stats">
-											<span><i class="icon-star2"></i> ${repo.stargazers_count}</span>
-											<span><i class="icon-flow-branch"></i> ${repo.forks_count}</span>
-										</div>
-									</div>
-								</a>
+			// Build a project card HTML string from repo data
+			function buildCardHTML(repo) {
+				const imgUrl = repo.customImage || (repo.owner && repo.owner.avatar_url) || repo.fallbackImage;
+				return `
+					<div class="modern-project">
+						<a href="${repo.html_url}" target="_blank" rel="noopener noreferrer" class="modern-project-link">
+							<div class="modern-project-image-wrapper">
+								<img src="${imgUrl}" alt="${repo.name}" class="modern-project-image" loading="lazy">
 							</div>
-						`;
-						container.appendChild(col);
-					});
-				}).catch(err => {
-					container.innerHTML = '<div class="col-md-12"><p class="text-center">Unable to load GitHub projects at this time.</p></div>';
-				});
+							<div class="modern-project-title">
+								<h3>${repo.name}</h3>
+								<p>${repo.description || 'GitHub Repository'}</p>
+								<div class="repo-stats">
+									<span><i class="icon-star2"></i> ${typeof repo.stargazers_count === 'number' ? repo.stargazers_count : '—'}</span>
+									<span><i class="icon-flow-branch"></i> ${typeof repo.forks_count === 'number' ? repo.forks_count : '—'}</span>
+								</div>
+							</div>
+						</a>
+					</div>
+				`;
 			}
+
+			// Progressive fetch: each card renders as soon as its individual request resolves
+			pinnedRepos.forEach(function(pin, index) {
+				const skeleton = document.getElementById('skeleton-' + index);
+				if (!skeleton) return;
+
+				fetch('https://api.github.com/repos/' + pin.repo)
+					.then(function(res) {
+						if (!res.ok) throw new Error('API error: ' + res.status);
+						return res.json();
+					})
+					.then(function(data) {
+						data.customImage = pin.fallbackImage;
+						skeleton.className = 'col-md-4 col-padding animated fadeInUp';
+						skeleton.innerHTML = buildCardHTML(data);
+					})
+					.catch(function(err) {
+						// Fallback: render card from locally known data
+						console.warn('GitHub API fallback for', pin.repo, err);
+						var parts = pin.repo.split('/');
+						var fallback = {
+							name: parts[parts.length - 1],
+							html_url: 'https://github.com/' + pin.repo,
+							description: 'GitHub Repository',
+							fallbackImage: pin.fallbackImage,
+							stargazers_count: null,
+							forks_count: null
+						};
+						skeleton.className = 'col-md-4 col-padding animated fadeInUp';
+						skeleton.innerHTML = buildCardHTML(fallback);
+					});
+			});
 		});
 	</script>
 
