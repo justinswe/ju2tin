@@ -1,528 +1,656 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Justin Fernbaugh</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Justin Fernbaugh portfolio and experience." />
-	<meta name="keywords" content="Justin Fernbaugh, Justin, Fernbaugh, Justin Fernbaugh website, systems engineer, software engineer" />
-	<meta name="author" content="Justin Fernbaugh portfolio and experience." />
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Justin Fernbaugh — Infrastructure &amp; Software Engineer</title>
+    <meta
+      name="description"
+      content="Justin Fernbaugh is an infrastructure and software engineer working on distributed systems, build tooling, and cloud infrastructure."
+    />
+    <meta name="author" content="Justin Fernbaugh" />
+    <link rel="canonical" href="https://ju2tin.com/" />
 
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link rel="dns-prefetch" href="https://api.github.com">
-	<link href="https://fonts.googleapis.com/css?family=Space+Mono&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Justin Fernbaugh" />
+    <meta
+      property="og:title"
+      content="Justin Fernbaugh — Infrastructure &amp; Software Engineer"
+    />
+    <meta
+      property="og:description"
+      content="Infrastructure, software engineering, distributed systems, build tooling, and cloud infrastructure."
+    />
+    <meta property="og:url" content="https://ju2tin.com/" />
+    <meta
+      property="og:image"
+      content="https://ju2tin.com/assets/v1/images/social-preview.jpg"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Justin Fernbaugh, Infrastructure and Software Engineer"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Justin Fernbaugh — Infrastructure &amp; Software Engineer"
+    />
+    <meta
+      name="twitter:description"
+      content="Infrastructure, software engineering, and distributed systems."
+    />
+    <meta
+      name="twitter:image"
+      content="https://ju2tin.com/assets/v1/images/social-preview.jpg"
+    />
+    <meta
+      name="twitter:image:alt"
+      content="Justin Fernbaugh, Infrastructure and Software Engineer"
+    />
 
-	<!-- Fav Icon -->
-	<link rel="icon" href="favicon.ico?" type="image/x-icon">
-	
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css" media="print" onload="this.media='all'">
-	<noscript><link rel="stylesheet" href="css/animate.css"></noscript>
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css" media="print" onload="this.media='all'">
-	<noscript><link rel="stylesheet" href="css/icomoon.css"></noscript>
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="icon" href="favicon.ico" sizes="any" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/v1/images/favicon-32x32.png"
+    />
+    <link rel="apple-touch-icon" href="assets/v1/images/apple-touch-icon.png" />
+    <link rel="stylesheet" href="assets/v1/site.css" />
+  </head>
+  <body id="top" itemscope itemtype="https://schema.org/Person">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <meta itemprop="url" content="https://ju2tin.com/" />
+    <meta itemprop="jobTitle" content="Infrastructure and Software Engineer" />
+    <meta
+      itemprop="knowsAbout"
+      content="Infrastructure, software engineering, distributed systems, Go, Bazel, Kubernetes, Google Cloud Platform, Amazon Web Services"
+    />
 
-	<!-- Theme style  -->
-	<link rel="stylesheet" href="css/style.min.css">
+    <header class="site-header">
+      <nav class="site-nav" aria-label="Primary navigation">
+        <div class="nav-inner">
+          <a
+            class="wordmark"
+            href="#top"
+            aria-label="Justin Fernbaugh, back to top"
+            >JF</a
+          >
+          <div class="nav-scroll">
+            <ul class="nav-links">
+              <li><a href="#work">Work</a></li>
+              <li><a href="#open-source">Open Source</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#about">About</a></li>
+              <li>
+                <a
+                  class="icon-link"
+                  itemprop="sameAs"
+                  href="https://github.com/justinswe"
+                  aria-label="Justin Fernbaugh on GitHub"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M12 .8a11.5 11.5 0 0 0-3.6 22.4c.6.1.8-.2.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.5-1.4-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0C17 5 18 5.3 18 5.3c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.8 5.4-5.5 5.7.4.4.8 1.1.8 2.2v3.2c0 .4.2.7.8.6A11.5 11.5 0 0 0 12 .8Z"
+                    />
+                  </svg>
+                  <span class="visually-hidden">GitHub</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="icon-link"
+                  itemprop="sameAs"
+                  href="https://www.linkedin.com/in/justin-fernbaugh/"
+                  aria-label="Justin Fernbaugh on LinkedIn"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M5.3 7.9H1.7V22h3.6V7.9ZM3.5 2A2.1 2.1 0 1 0 3.5 6.2 2.1 2.1 0 0 0 3.5 2ZM22.3 13.9c0-4.3-2.3-6.3-5.4-6.3a4.7 4.7 0 0 0-4.2 2.3h-.1v-2H9.2V22h3.6v-7c0-1.8.3-3.6 2.6-3.6 2.2 0 2.3 2.1 2.3 3.7V22h3.6l1-8.1Z"
+                    />
+                  </svg>
+                  <span class="visually-hidden">LinkedIn</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
-	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
+      <div class="hero shell">
+        <div class="hero-grid">
+          <div>
+            <h1>
+              <span itemprop="name">Justin Fernbaugh</span> — Infrastructure
+              &amp; Software Engineer.
+            </h1>
+            <p class="hero-copy">
+              I work on infrastructure, software engineering, and distributed
+              systems, primarily with Go, Bazel, Kubernetes, GCP, and AWS.
+            </p>
+            <div class="hero-actions" role="group" aria-label="Featured links">
+              <a class="button button-primary" href="#work">Explore work</a>
+              <a
+                class="button button-secondary"
+                href="https://github.com/justinswe"
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M12 .8a11.5 11.5 0 0 0-3.6 22.4c.6.1.8-.2.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.5-1.4-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0C17 5 18 5.3 18 5.3c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.8 5.4-5.5 5.7.4.4.8 1.1.8 2.2v3.2c0 .4.2.7.8.6A11.5 11.5 0 0 0 12 .8Z"
+                  />
+                </svg>
+                GitHub
+              </a>
+              <a
+                class="button button-secondary"
+                href="https://www.linkedin.com/in/justin-fernbaugh/"
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M5.3 7.9H1.7V22h3.6V7.9ZM3.5 2A2.1 2.1 0 1 0 3.5 6.2 2.1 2.1 0 0 0 3.5 2ZM22.3 13.9c0-4.3-2.3-6.3-5.4-6.3a4.7 4.7 0 0 0-4.2 2.3h-.1v-2H9.2V22h3.6v-7c0-1.8.3-3.6 2.6-3.6 2.2 0 2.3 2.1 2.3 3.7V22h3.6l1-8.1Z"
+                  />
+                </svg>
+                LinkedIn
+              </a>
+            </div>
+          </div>
 
-	<!-- Custom Modern Projects Style -->
-	<style>
-		/* Modernized Projects Section Overrides */
-		#fh5co-work.fh5co-bg-dark {
-			background-color: #0f172a !important; /* Chic deep slate background for modern aesthetic */
-		}
-		#github-projects-container {
-			display: flex;
-			flex-wrap: wrap;
-		}
-		#github-projects-container > .col-md-4 {
-			display: flex;
-			flex-direction: column;
-			margin-bottom: 30px;
-			float: none !important; /* Override bootstrap floats perfectly for flexbox */
-		}
-		.modern-project {
-			background: #1e293b; /* Premium dark card */
-			border: 1px solid rgba(255, 255, 255, 0.05);
-			border-radius: 12px;
-			overflow: hidden;
-			transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-			display: flex;
-			flex-direction: column;
-			height: 100%; 
-			text-align: left;
-			box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-		}
-		.modern-project:hover {
-			transform: translateY(-8px);
-			box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
-			border-color: rgba(255, 144, 0, 0.5); /* Subtle brand accent stroke upon hover */
-		}
-		.modern-project-link { 
-			display: flex; 
-			flex-direction: column; 
-			height: 100%; 
-			text-decoration: none !important;
-		}
-		.modern-project-image-wrapper {
-			width: 100%;
-			height: 180px;
-			overflow: hidden;
-			background: #0f172a;
-			position: relative;
-		}
-		.modern-project-image-wrapper::after {
-			content: '';
-			position: absolute;
-			top: 0; left: 0; right: 0; bottom: 0;
-			background: linear-gradient(to bottom, rgba(0,0,0,0) 60%, rgba(30, 41, 59, 1));
-			opacity: 0.5;
-		}
-		.modern-project-image {
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
-			transition: transform 0.5s ease;
-		}
-		.modern-project:hover .modern-project-image {
-			transform: scale(1.05); /* Slight prestige zoom on hover */
-		}
-		.modern-project-title {
-			padding: 24px;
-			display: flex;
-			flex-direction: column;
-			flex-grow: 1;
-		}
-		.modern-project-title h3 {
-			margin: 0 0 12px 0 !important;
-			font-size: 1.15rem !important;
-			font-weight: 700;
-			color: #f8fafc !important;
-			letter-spacing: 0.25px !important;
-			text-transform: none !important;
-			line-height: 1.3 !important;
-		}
-		.modern-project-title p {
-			font-size: 0.95rem !important;
-			color: #94a3b8 !important;
-			line-height: 1.6 !important;
-			margin-bottom: 24px !important;
-			display: -webkit-box;
-			-webkit-line-clamp: 3;
-			-webkit-box-orient: vertical;
-			overflow: hidden;
-		}
-		.repo-stats {
-			margin-top: auto;
-			display: flex;
-			align-items: center;
-			gap: 16px;
-			color: #cbd5e1;
-			font-size: 0.85rem;
-			font-weight: 600;
-		}
-		.repo-stats i {
-			color: #FF9000;
-			margin-right: 4px;
-		}
+          <picture class="portrait hero-portrait">
+            <source
+              type="image/avif"
+              srcset="
+                assets/v1/images/justin-240.avif 240w,
+                assets/v1/images/justin-348.avif 348w,
+                assets/v1/images/justin-768.avif 768w
+              "
+              sizes="(min-width: 75rem) 24rem, (min-width: 48rem) 32vw, calc(100vw - 2rem)"
+            />
+            <source
+              type="image/webp"
+              srcset="
+                assets/v1/images/justin-240.webp 240w,
+                assets/v1/images/justin-348.webp 348w,
+                assets/v1/images/justin-768.webp 768w
+              "
+              sizes="(min-width: 75rem) 24rem, (min-width: 48rem) 32vw, calc(100vw - 2rem)"
+            />
+            <img
+              src="assets/v1/images/justin-768.jpg"
+              srcset="
+                assets/v1/images/justin-240.jpg 240w,
+                assets/v1/images/justin-348.jpg 348w,
+                assets/v1/images/justin-768.jpg 768w
+              "
+              sizes="(min-width: 75rem) 24rem, (min-width: 48rem) 32vw, calc(100vw - 2rem)"
+              width="768"
+              height="597"
+              fetchpriority="high"
+              decoding="async"
+              alt="Portrait of Justin Fernbaugh"
+            />
+          </picture>
+        </div>
 
-		/* Skeleton Loading Cards */
-		@keyframes skeleton-pulse {
-			0% { opacity: 0.6; }
-			50% { opacity: 0.3; }
-			100% { opacity: 0.6; }
-		}
-		.skeleton-card {
-			background: #1e293b;
-			border: 1px solid rgba(255, 255, 255, 0.05);
-			border-radius: 12px;
-			overflow: hidden;
-			height: 100%;
-			min-height: 340px;
-			animation: skeleton-pulse 1.5s ease-in-out infinite;
-		}
-		.skeleton-card .skeleton-image {
-			width: 100%;
-			height: 180px;
-			background: #0f172a;
-		}
-		.skeleton-card .skeleton-body {
-			padding: 24px;
-		}
-		.skeleton-card .skeleton-line {
-			height: 14px;
-			background: rgba(255, 255, 255, 0.06);
-			border-radius: 4px;
-			margin-bottom: 12px;
-		}
-		.skeleton-card .skeleton-line.short {
-			width: 60%;
-		}
-		.skeleton-card .skeleton-line.medium {
-			width: 85%;
-		}
-		.skeleton-card .skeleton-line.long {
-			width: 100%;
-		}
+        <h2 class="metrics-heading" id="metrics-heading">
+          Key wins for organizations
+        </h2>
+        <dl class="metrics" aria-labelledby="metrics-heading">
+          <div class="metric">
+            <dt>65%+</dt>
+            <dd>P50 build and test improvement</dd>
+          </div>
+          <div class="metric">
+            <dt>80%</dt>
+            <dd>P90 build and test improvement</dd>
+          </div>
+          <div class="metric">
+            <dt>25 min</dt>
+            <dd>P95 build/test time, down from 1h 25m</dd>
+          </div>
+          <div class="metric">
+            <dt>2,000+</dt>
+            <dd>
+              Architected publishing pipelines across a 20M+ line monorepo
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </header>
 
-		/* Global Canvas & Icons Extension */
-		.fh5co-cover .overlay {
-			background: rgba(15, 23, 42, 0.85) !important; /* Replacing flat orange with chic deep slate transparent overlay */
-		}
-		
-		/* Social Icons Refinement */
-		.fh5co-social-icons li a {
-			color: #f8fafc !important; /* Crisp white */
-			transition: all 0.3s ease;
-		}
-		.fh5co-social-icons li a:hover,
-		.fh5co-social-icons li a:active,
-		.fh5co-social-icons li a:focus {
-			color: #FF9000 !important; /* Project card accent */
-		}
-		
-		/* Resume Timeline Badges Modernization */
-		.timeline > li > .timeline-badge {
-			background-color: #1e293b !important; /* Premium dark card background instead of flat orange */
-			color: #FF9000 !important; /* Crisp orange accent for the icon itself */
-			box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-			border: 1px solid rgba(255, 255, 255, 0.05);
-		}
-		
-		/* Go To Top Arrow */
-		.gototop a {
-			background: #1e293b !important;
-			color: #FF9000 !important;
-			border: 1px solid rgba(255, 255, 255, 0.05);
-			box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-		}
-		.gototop a:hover {
-			background: #FF9000 !important;
-			color: #fff !important;
-		}
-	</style>
+    <main id="main-content">
+      <section id="work" class="section shell" aria-labelledby="work-title">
+        <div class="section-heading">
+          <p class="section-kicker">01 / Featured work</p>
+          <h2 id="work-title">OSS Projects</h2>
+          <p>
+            Open-source projects spanning cloud infrastructure, AI systems, Go
+            libraries, and network automation.
+          </p>
+        </div>
 
-	</head>
-	<body>
-		
-	<div class="fh5co-loader"></div>
-	
-	<div id="page">	
-	<header id="fh5co-header" class="fh5co-cover js-fullheight" role="banner" data-stellar-background-ratio="0.5">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center">
-					<div class="display-t js-fullheight">
-						<div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
-							<div class="profile-thumb" style="background: url(images/user-3.jpg);"></div>
-							<h1><span>Justin Fernbaugh</span></h1>
-							<h3><span>Software Engineer / Platform Engineer</span></h3>
-							<p>
-								<ul class="fh5co-social-icons">
-									<li><a href="https://www.linkedin.com/in/justin-fernbaugh/"><i class="icon-linkedin2"></i></a></li>
-									<li><a href="https://github.com/justinswe"><i class="icon-github2"></i></a></li>
-								</ul>
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</header>
+        <div class="project-grid">
+          <article class="project-card">
+            <p class="project-number">01</p>
+            <h3>rules_cloudrun</h3>
+            <p>
+              Cloud Run configuration is easy to duplicate and difficult to
+              validate. These Bazel rules validate inputs, generate typed
+              manifests, and support digest-pinned service, job, and worker
+              deployments.
+            </p>
+            <ul class="tags" aria-label="Technologies used">
+              <li>Bazel</li>
+              <li>Starlark</li>
+              <li>Cloud Run</li>
+              <li>Go</li>
+            </ul>
+            <a
+              class="text-link"
+              href="https://github.com/justinswe/rules_cloudrun"
+              >View rules_cloudrun on GitHub
+              <span aria-hidden="true">↗</span></a
+            >
+          </article>
 
-	<div id="fh5co-about" class="animate-box">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>About Me & Cats</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="about-me-card">
-					<div class="col-md-4">
-						<ul class="info">
-							<li><span class="first-block">Full Name:</span><span class="second-block">Justin Fernbaugh</span></li>
-							<li><span class="first-block">Email:</span><span class="second-block">fernbaughj@gmail.com</span></li>
-							<li><span class="first-block">Github:</span><a href="https://github.com/justinswe"><span class="second-block">Justin-Fernbaugh</span></a></li>
-							<li><span class="first-block">Location:</span><span class="second-block">Portland Oregon</span></li>
-						</ul>
-					</div>
-					<div class="col-md-8">
-						
-						<h2>Greetings!</h2>
-						<p>Software and Platform Engineer, with years of experience in DevOps, Cloud Infrastructure, and Platform Engineering. Underpinned by various certificates including AWS Solutions Architect. I thrive on designing and implementing scalable, high-performance solutions using technologies like Go, Bazel, GCP/AWS, and Kubernetes.</p>
-						<p>I have had the privilege of making a real business impact at great organizations. At Apex, I've architected CI/CD pipelines, leveraging unique characteristics of the Bazel build system resulting in a 65%+ P50 improvement, and 80% P90 improvement. Similarly, designed microservices, and systems for orchestrating deployment, creation of manifests and configs for a GitOps pattern. The systems also scaled effectively under load in a 15+ million line codebase handling 500+ builds of 600+ applications, and 1000+ deployments daily in a monorepo.</p>
-            <p>Moreover, as a Systems Engineer at Oregon State's Open Source Lab, I designed, and deployed critical infrastructure for more than 100 clients, including the Linux Foundation and Apache Software. Highlight being implementing end-to-end the multi-zonal automatic failover of distributed PostgreSQL databases impacting over 150 organizations.</p>
-						
-						<p>When I'm not learning new technologies, or patterns; I'm often managing my home lab, following Formula 1 racing, or hiking throughout the Pacific Northwest.</p>
+          <article class="project-card">
+            <p class="project-number">02</p>
+            <h3>Jarvis</h3>
+            <p>
+              A search-grounded Discord AI system with multi-cloud and
+              multi-LLM-provider support. It can run as separate gateway and
+              worker microservices or as a single deployment, with optional
+              DynamoDB-backed state.
+            </p>
+            <ul class="tags" aria-label="Technologies used">
+              <li>Go</li>
+              <li>Bazel</li>
+              <li>Multi-cloud</li>
+              <li>Multi-LLM</li>
+              <li>DynamoDB</li>
+              <li>Discord</li>
+            </ul>
+            <a class="text-link" href="https://github.com/justinswe/jarvis"
+              >View Jarvis on GitHub <span aria-hidden="true">↗</span></a
+            >
+          </article>
 
-						<!-- Start cats -->
-						<div class="row cat-gallery">
-							<div class="col-md-4">
-								<figure class="cat-card">
-									<img src="images/fish.jpg" alt="fish" width="3024" height="4032" style="width:100%;height:auto" loading="lazy">
-									<figcaption>Fish</figcaption>
-								</figure>
-							</div>
-							<div class="col-md-4">
-								<figure class="cat-card">
-									<img src="images/milo.jpg" alt="milo" width="4284" height="5712" style="width:100%;height:auto" loading="lazy">
-									<figcaption>Milo</figcaption>
-								</figure>
-							</div>
-							<div class="col-md-4">
-								<figure class="cat-card">
-									<img src="images/ramen.jpg" alt="ramen" width="4284" height="5712" style="width:100%;height:auto" loading="lazy">
-									<figcaption>Ramen</figcaption>
-								</figure>
-							</div>
-						</div>
-						<!-- End cats -->
-						<p>
-							<ul class="fh5co-social-icons">
-								<li><a href="https://www.linkedin.com/in/justin-fernbaugh/"><i class="icon-linkedin2"></i></a></li>
-								<li><a href="https://github.com/justinswe"><i class="icon-github2"></i></a></li>
-							</ul>
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+          <article class="project-card">
+            <p class="project-number">03</p>
+            <h3>std</h3>
+            <p>
+              Reusable Go building blocks for production command-line
+              applications: stack-aware errors, graceful shutdown, and retry
+              behavior designed around resilient operations.
+            </p>
+            <ul class="tags" aria-label="Technologies used">
+              <li>Go</li>
+              <li>CLI</li>
+              <li>Errors</li>
+              <li>Retries</li>
+            </ul>
+            <a class="text-link" href="https://github.com/justinswe/std"
+              >View std on GitHub <span aria-hidden="true">↗</span></a
+            >
+          </article>
 
-	<div id="fh5co-resume" class="fh5co-bg-color">
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>My Resume</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12 col-md-offset-0">
-					<ul class="timeline">
-						<li class="timeline-heading text-center animate-box">
-							<div><h3>Work Experience</h3></div>
-						</li>
+          <article class="project-card">
+            <p class="project-number">04</p>
+            <h3>DNS Controller</h3>
+            <p>
+              A small Go service that watches a changing public IP and keeps
+              Cloudflare DNS records synchronized, removing a fragile manual
+              step from home-lab operations.
+            </p>
+            <ul class="tags" aria-label="Technologies used">
+              <li>Go</li>
+              <li>Cloudflare</li>
+              <li>DNS</li>
+              <li>Docker</li>
+            </ul>
+            <a
+              class="text-link"
+              href="https://github.com/justinswe/DNS-Controller"
+              >View DNS Controller on GitHub
+              <span aria-hidden="true">↗</span></a
+            >
+          </article>
+        </div>
+      </section>
 
-						<li class="animate-box timeline-inverted">
-							<div class="timeline-badge"><i class="icon-suitcase"></i></div>
-							<div class="timeline-panel resume-card">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Associate Platform Engineer</h3>
-									<span class="company">Apex Fintech Solutions - Nov 2024 - Current</span>
-								</div>
-								<div class="timeline-body">
-									<p>Lead multiple initivatives: Architected CI/CD improving build/test by up to 80%; standardized container creation across Go, Java, Typescript, and Python; team Bazel, and build-system SME on the DevEx team. </p>
-								</div>
-							</div>
-						</li>
+      <section
+        id="open-source"
+        class="section section-band"
+        aria-labelledby="open-source-title"
+      >
+        <div class="shell">
+          <div class="section-heading">
+            <p class="section-kicker">02 / Open source</p>
+            <h2 id="open-source-title">Upstream contributions.</h2>
+            <p>
+              Targeted fixes contributed to the tools and infrastructure
+              communities I work with.
+            </p>
+          </div>
 
-						<li class="animate-box timeline-unverted">
-							<div class="timeline-badge"><i class="icon-suitcase"></i></div>
-							<div class="timeline-panel resume-card">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Startup Co-Founder</h3>
-									<span class="company">Lavndr - June 2024 - Current</span>
-								</div>
-								<div class="timeline-body">
-									<p>Engineering; Creating a Cannabis Compliance & FinTech EcoSystem</p>
-								</div>
-							</div>
-						</li>
+          <div class="contribution-grid">
+            <article class="contribution-card">
+              <p><span class="status status-review">In review</span></p>
+              <h3>
+                <a href="https://github.com/bazelbuild/bazel/pull/29758"
+                  >Bazel #29758 <span aria-hidden="true">↗</span></a
+                >
+              </h3>
+              <p>
+                Fixes <code>exclusive-if-local</code> incorrectly limiting
+                concurrency when actions use remote execution.
+              </p>
+            </article>
 
-						<li class="animate-box timeline-inverted">
-							<div class="timeline-badge"><i class="icon-suitcase"></i></div>
-							<div class="timeline-panel resume-card">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Systems Engineer</h3>
-									<span class="company">Oregon State University - Nov 2022 - August 2024</span>
-								</div>
-								<div class="timeline-body">
-									<p>Open Source Labs allowed me to gain a breadth of knowledge in regards to working with infrastructure from the CPU to the raid controller all the way up to distributed nodes running connected in a cluster. Notable tech was Chef, Terraform, Ruby, and PgPool in a high-availability PostgreSQL cluster with automatic failover capabilites.</p>
-								</div>
-							</div>
-						</li>
-						
-						<li class="animate-box timeline-unverted">
-							<div class="timeline-badge"><i class="icon-suitcase"></i></div>
-							<div class="timeline-panel resume-card">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Software Engineer</h3>
-									<span class="company">Lithia and Driveway - Jun 2022 - Nov 2022</span>
-								</div>
-								<div class="timeline-body">
-									<p>Designed back-end systems revolving around business critical operations such as account management, and loans/liens processing. Specifically, I developed APIs for these operations.</p>
-								</div>
-							</div>
-						</li>
-						<li class="animate-box timeline-inverted">
-							<div class="timeline-badge"><i class="icon-suitcase"></i></div>
-							<div class="timeline-panel resume-card">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Instructor</h3>
-									<span class="company">Coding with Kids - Mar 2019 - Feb 2020</span>
-								</div>
-								<div class="timeline-body">
-									<p>Taught programming / coding coursework to youth at a variety of schools around and in the greater Portland area. The majority of my time was spent developing curriculum. </p>
-								</div>
-							</div>
-						</li>
+            <article class="contribution-card">
+              <p><span class="status status-merged">Merged</span></p>
+              <h3>
+                <a href="https://github.com/aspect-build/rules_js/pull/2313"
+                  >rules_js #2313 <span aria-hidden="true">↗</span></a
+                >
+              </h3>
+              <p>
+                Adds configurable directory and file permissions to JavaScript
+                image layers.
+              </p>
+            </article>
 
-						<br>
-						<li class="timeline-heading text-center animate-box">
-							<div><h3>Education</h3></div>
-						<li class="timeline-unverted animate-box">
-							<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
-							<div class="timeline-panel resume-card">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">University</h3>
-									<span class="company">Oregon State University - 2020 - 2024</span>
-								</div>
-								<div class="timeline-body">
-									<p>Bachelor's of Science in Computer Science with a coursework emphasis on Systems, as well as Distributed Systems.</p>
-								</div>
-							</div>
-						</li>
-			    	</ul>
-				</div>
-			</div>
-		</div>
-	</div>
+            <article class="contribution-card">
+              <p><span class="status status-merged">Merged</span></p>
+              <h3>
+                <a
+                  href="https://github.com/bazelbuild/bazel-central-registry/pull/7538"
+                  >Bazel Central Registry #7538
+                  <span aria-hidden="true">↗</span></a
+                >
+              </h3>
+              <p>Restores Pigz compatibility with Bazel 9.</p>
+            </article>
 
-	<div id="fh5co-work" class="fh5co-bg-dark">
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Projects/Contributions</h2>
-				</div>
-			</div>
-			<div class="row" id="github-projects-container">
-				<div class="col-md-4 col-padding" id="skeleton-0"><div class="skeleton-card"><div class="skeleton-image"></div><div class="skeleton-body"><div class="skeleton-line short"></div><div class="skeleton-line long"></div><div class="skeleton-line medium"></div></div></div></div>
-				<div class="col-md-4 col-padding" id="skeleton-1"><div class="skeleton-card"><div class="skeleton-image"></div><div class="skeleton-body"><div class="skeleton-line short"></div><div class="skeleton-line long"></div><div class="skeleton-line medium"></div></div></div></div>
-				<div class="col-md-4 col-padding" id="skeleton-2"><div class="skeleton-card"><div class="skeleton-image"></div><div class="skeleton-body"><div class="skeleton-line short"></div><div class="skeleton-line long"></div><div class="skeleton-line medium"></div></div></div></div>
-				<div class="col-md-4 col-padding" id="skeleton-3"><div class="skeleton-card"><div class="skeleton-image"></div><div class="skeleton-body"><div class="skeleton-line short"></div><div class="skeleton-line long"></div><div class="skeleton-line medium"></div></div></div></div>
-				<div class="col-md-4 col-padding" id="skeleton-4"><div class="skeleton-card"><div class="skeleton-image"></div><div class="skeleton-body"><div class="skeleton-line short"></div><div class="skeleton-line long"></div><div class="skeleton-line medium"></div></div></div></div>
-				<div class="col-md-4 col-padding" id="skeleton-5"><div class="skeleton-card"><div class="skeleton-image"></div><div class="skeleton-body"><div class="skeleton-line short"></div><div class="skeleton-line long"></div><div class="skeleton-line medium"></div></div></div></div>
-			</div>
-		</div>
-	</div>
+            <article class="contribution-card">
+              <p><span class="status status-merged">Merged</span></p>
+              <h3>Sous Chefs PostgreSQL</h3>
+              <p>
+                <a href="https://github.com/sous-chefs/postgresql/pull/765"
+                  >#765</a
+                >
+                and
+                <a href="https://github.com/sous-chefs/postgresql/pull/767"
+                  >#767</a
+                >
+                correct multi-version package selection and OS-specific
+                PostgreSQL yum GPG key handling.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
 
-	<div id="fh5co-footer" class="modern-footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 text-center">
-					<p>&copy; <span id="copyright-year">2026</span> Justin Fernbaugh. All rights reserved.</p>
-					<ul class="fh5co-social-icons">
-						<li><a href="https://www.linkedin.com/in/justin-fernbaugh/" target="_blank" rel="noopener noreferrer"><i class="icon-linkedin2"></i></a></li>
-						<li><a href="https://github.com/justinswe" target="_blank" rel="noopener noreferrer"><i class="icon-github2"></i></a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
+      <section
+        id="experience"
+        class="section shell"
+        aria-labelledby="experience-title"
+      >
+        <div class="section-heading">
+          <p class="section-kicker">03 / Experience</p>
+          <h2 id="experience-title">Systems that hold up at scale.</h2>
+          <p>
+            Selected outcomes from platform engineering, infrastructure, and
+            software roles.
+          </p>
+        </div>
 
-	<div class="gototop js-top">
-		<a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
-	</div>
-	
-	<!-- jQuery -->
-	<script src="js/jquery.min.js" defer></script>
-	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js" defer></script>
-	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js" defer></script>
-	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js" defer></script>
-	<!-- Stellar Parallax -->
-	<script src="js/jquery.stellar.min.js" defer></script>
-	
-	<!-- Main -->
-	<script src="js/main.min.js" defer></script>
+        <div class="highlight-grid">
+          <article class="highlight">
+            <p class="highlight-label">Build &amp; CI</p>
+            <h3>Faster feedback, consistent artifacts.</h3>
+            <p>
+              At Apex, architected Bazel CI that reduced P50 build/test time by
+              65%+, P90 by 80%, and P95 from 1h 25m to 25 minutes, while
+              standardizing container builds across Go, Java, TypeScript, and
+              Python. All with a sub four-minute P50 Build/Test on PRs, and
+              Merges.
+            </p>
+          </article>
+          <article class="highlight">
+            <p class="highlight-label">GitOps delivery</p>
+            <h3>Deployment tooling at monorepo scale.</h3>
+            <p>
+              Designed services and tooling for manifests, configuration, and
+              GitOps orchestration in a 20M+ line monorepo supporting 500+
+              builds, 800+ applications, and thousands of daily deployments.
+            </p>
+          </article>
+          <article class="highlight">
+            <p class="highlight-label">Infrastructure</p>
+            <h3>Resilient open-source hosting.</h3>
+            <p>
+              At the OSU Open Source Lab, built infrastructure for more than 100
+              clients and implemented multi-zone automatic PostgreSQL failover
+              serving over 150 organizations.
+            </p>
+          </article>
+        </div>
 
-	<!-- Dynamic Data Script -->
-	<script>
-		document.addEventListener("DOMContentLoaded", function() {
-			// Update Copyright Year
-			const yearSpan = document.getElementById("copyright-year");
-			if (yearSpan) {
-				yearSpan.textContent = new Date().getFullYear();
-			}
+        <div class="chronology">
+          <h3 id="chronology-title">Chronology</h3>
+          <ol>
+            <li>
+              <p class="chronology-date">
+                <time datetime="2024-11">Nov 2024</time> — Present
+              </p>
+              <div>
+                <h4>Platform Engineer</h4>
+                <p>Apex Fintech Solutions</p>
+              </div>
+            </li>
+            <li>
+              <p class="chronology-date">
+                <time datetime="2024-06">Jun 2024</time> — Present
+              </p>
+              <div>
+                <h4>Startup Co-Founder</h4>
+                <p>Lavndr</p>
+              </div>
+            </li>
+            <li>
+              <p class="chronology-date">
+                <time datetime="2022-11">Nov 2022</time> —
+                <time datetime="2024-08">Aug 2024</time>
+              </p>
+              <div>
+                <h4>Systems Engineer</h4>
+                <p>Oregon State University Open Source Lab</p>
+              </div>
+            </li>
+            <li>
+              <p class="chronology-date">
+                <time datetime="2022-06">Jun 2022</time> —
+                <time datetime="2022-11">Nov 2022</time>
+              </p>
+              <div>
+                <h4>Software Engineer</h4>
+                <p>Lithia &amp; Driveway</p>
+              </div>
+            </li>
+            <li>
+              <p class="chronology-date">
+                <time datetime="2019-03">Mar 2019</time> —
+                <time datetime="2020-02">Feb 2020</time>
+              </p>
+              <div>
+                <h4>Instructor</h4>
+                <p>Coding with Kids</p>
+              </div>
+            </li>
+            <li>
+              <p class="chronology-date">
+                <time datetime="2020">2020</time> —
+                <time datetime="2024">2024</time>
+              </p>
+              <div>
+                <h4>B.S. Computer Science</h4>
+                <p>
+                  Oregon State University · Systems and distributed systems
+                  emphasis
+                </p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
 
-			// Pinned repos config — used for both fetching and fallback rendering
-			const pinnedRepos = [
-				{ repo: "sous-chefs/postgresql", fallbackImage: "images/postgresql.png" },
-				{ repo: "justinswe/rules_cloudrun", fallbackImage: "images/bzl.png" },
-				{ repo: "justinswe/LinearHashIndex", fallbackImage: "images/map-reduce.jpeg" },
-				{ repo: "aspect-build/rules_js", fallbackImage: "images/bzl.png" },
-				{ repo: "OSU-MC/Open-Response", fallbackImage: "images/classroom-polling.png" },
-				{ repo: "bazelbuild/bazel-central-registry", fallbackImage: "images/bzl.png" }
-			];
+      <section
+        id="about"
+        class="section section-band"
+        aria-labelledby="about-title"
+      >
+        <div class="shell">
+          <div class="section-heading">
+            <p class="section-kicker">04 / About</p>
+            <h2 id="about-title">Based in Portland, Oregon.</h2>
+          </div>
 
-			// Build a project card HTML string from repo data
-			function buildCardHTML(repo) {
-				const imgUrl = repo.customImage || (repo.owner && repo.owner.avatar_url) || repo.fallbackImage;
-				return `
-					<div class="modern-project">
-						<a href="${repo.html_url}" target="_blank" rel="noopener noreferrer" class="modern-project-link">
-							<div class="modern-project-image-wrapper">
-								<img src="${imgUrl}" alt="${repo.name}" class="modern-project-image" loading="lazy">
-							</div>
-							<div class="modern-project-title">
-								<h3>${repo.name}</h3>
-								<p>${repo.description || 'GitHub Repository'}</p>
-								<div class="repo-stats">
-									<span><i class="icon-star2"></i> ${typeof repo.stargazers_count === 'number' ? repo.stargazers_count : '—'}</span>
-									<span><i class="icon-flow-branch"></i> ${typeof repo.forks_count === 'number' ? repo.forks_count : '—'}</span>
-								</div>
-							</div>
-						</a>
-					</div>
-				`;
-			}
+          <div class="about-grid">
+            <div class="about-copy">
+              <p class="about-lede">
+                I’m an infrastructure and software engineer interested in
+                distributed systems, build systems, cloud infrastructure, and
+                developer tooling.
+              </p>
+              <p>
+                Outside of work, I manage a home lab, follow Formula 1, and hike
+                around the Pacific Northwest. I also share the house with three
+                cats—Fish, Milo, and Ramen—who are much less interested in
+                reliable infrastructure.
+              </p>
+            </div>
+          </div>
 
-			// Progressive fetch: each card renders as soon as its individual request resolves
-			pinnedRepos.forEach(function(pin, index) {
-				const skeleton = document.getElementById('skeleton-' + index);
-				if (!skeleton) return;
+          <div class="cat-gallery">
+            <figure>
+              <picture>
+                <source
+                  type="image/avif"
+                  srcset="
+                    assets/v1/images/fish-320.avif 320w,
+                    assets/v1/images/fish-640.avif 640w
+                  "
+                  sizes="(min-width: 48rem) 21rem, calc(100vw - 2rem)"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    assets/v1/images/fish-320.webp 320w,
+                    assets/v1/images/fish-640.webp 640w
+                  "
+                  sizes="(min-width: 48rem) 21rem, calc(100vw - 2rem)"
+                />
+                <img
+                  src="assets/v1/images/fish-640.jpg"
+                  srcset="
+                    assets/v1/images/fish-320.jpg 320w,
+                    assets/v1/images/fish-640.jpg 640w
+                  "
+                  sizes="(min-width: 48rem) 21rem, calc(100vw - 2rem)"
+                  width="640"
+                  height="853"
+                  loading="lazy"
+                  decoding="async"
+                  alt="Fish, a white and tabby cat, sitting in a car seat wearing a harness"
+                />
+              </picture>
+              <figcaption>Fish</figcaption>
+            </figure>
+            <figure>
+              <picture>
+                <source
+                  type="image/avif"
+                  srcset="
+                    assets/v1/images/milo-320.avif 320w,
+                    assets/v1/images/milo-640.avif 640w
+                  "
+                  sizes="(min-width: 48rem) 21rem, calc(100vw - 2rem)"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    assets/v1/images/milo-320.webp 320w,
+                    assets/v1/images/milo-640.webp 640w
+                  "
+                  sizes="(min-width: 48rem) 21rem, calc(100vw - 2rem)"
+                />
+                <img
+                  src="assets/v1/images/milo-640.jpg"
+                  srcset="
+                    assets/v1/images/milo-320.jpg 320w,
+                    assets/v1/images/milo-640.jpg 640w
+                  "
+                  sizes="(min-width: 48rem) 21rem, calc(100vw - 2rem)"
+                  width="640"
+                  height="853"
+                  loading="lazy"
+                  decoding="async"
+                  alt="Milo, a gray tabby cat, resting with one paw draped over a cat bed"
+                />
+              </picture>
+              <figcaption>Milo</figcaption>
+            </figure>
+            <figure>
+              <picture>
+                <source
+                  type="image/avif"
+                  srcset="
+                    assets/v1/images/ramen-320.avif 320w,
+                    assets/v1/images/ramen-640.avif 640w
+                  "
+                  sizes="(min-width: 48rem) 21rem, calc(100vw - 2rem)"
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    assets/v1/images/ramen-320.webp 320w,
+                    assets/v1/images/ramen-640.webp 640w
+                  "
+                  sizes="(min-width: 48rem) 21rem, calc(100vw - 2rem)"
+                />
+                <img
+                  src="assets/v1/images/ramen-640.jpg"
+                  srcset="
+                    assets/v1/images/ramen-320.jpg 320w,
+                    assets/v1/images/ramen-640.jpg 640w
+                  "
+                  sizes="(min-width: 48rem) 21rem, calc(100vw - 2rem)"
+                  width="640"
+                  height="853"
+                  loading="lazy"
+                  decoding="async"
+                  alt="Ramen, a black cat with green eyes, wearing a gray sweater on a cat tree"
+                />
+              </picture>
+              <figcaption>Ramen</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+    </main>
 
-				fetch('https://api.github.com/repos/' + pin.repo)
-					.then(function(res) {
-						if (!res.ok) throw new Error('API error: ' + res.status);
-						return res.json();
-					})
-					.then(function(data) {
-						data.customImage = pin.fallbackImage;
-						skeleton.className = 'col-md-4 col-padding animated fadeInUp';
-						skeleton.innerHTML = buildCardHTML(data);
-					})
-					.catch(function(err) {
-						// Fallback: render card from locally known data
-						console.warn('GitHub API fallback for', pin.repo, err);
-						var parts = pin.repo.split('/');
-						var fallback = {
-							name: parts[parts.length - 1],
-							html_url: 'https://github.com/' + pin.repo,
-							description: 'GitHub Repository',
-							fallbackImage: pin.fallbackImage,
-							stargazers_count: null,
-							forks_count: null
-						};
-						skeleton.className = 'col-md-4 col-padding animated fadeInUp';
-						skeleton.innerHTML = buildCardHTML(fallback);
-					});
-			});
-		});
-	</script>
-
-	</body>
+    <footer class="site-footer">
+      <div class="shell footer-inner">
+        <p>© 2026 Justin Fernbaugh</p>
+        <ul>
+          <li><a href="https://github.com/justinswe">GitHub</a></li>
+          <li>
+            <a href="https://www.linkedin.com/in/justin-fernbaugh/">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
 </html>
-
