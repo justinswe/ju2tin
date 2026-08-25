@@ -6,7 +6,6 @@
   --border: #d9e0e8;
   --accent: #1557d6;
   --accent-dark: #0b42ad;
-  --accent-soft: #eaf1ff;
   --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
   --sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
@@ -86,7 +85,7 @@ h1 {
 
 h2 {
   margin-bottom: 1rem;
-  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-size: clamp(1.9rem, 4vw, 3rem);
 }
 
 h3 {
@@ -222,12 +221,18 @@ code {
 }
 
 .section-kicker,
-.project-number,
 .highlight-label {
   color: var(--accent);
   font-family: var(--mono);
   font-size: .78rem;
   font-weight: 700;
+}
+
+.section-kicker {
+  letter-spacing: .03em;
+}
+
+.highlight-label {
   letter-spacing: .08em;
   text-transform: uppercase;
 }
@@ -321,7 +326,7 @@ code {
 
 .section-heading {
   max-width: 42rem;
-  margin-bottom: clamp(2.5rem, 7vw, 4rem);
+  margin-bottom: clamp(2.25rem, 6vw, 3.5rem);
 }
 
 .section-heading > p:last-child {
@@ -353,12 +358,11 @@ code {
   min-width: 0;
   padding: clamp(1.25rem, 4vw, 2rem);
   flex-direction: column;
-  transition: border-color 150ms ease, transform 150ms ease;
+  transition: border-color 150ms ease;
 }
 
 .project-card:hover {
   border-color: #9eb8e9;
-  transform: translateY(-2px);
 }
 
 .project-card h3 {
@@ -367,31 +371,27 @@ code {
   overflow-wrap: anywhere;
 }
 
-.project-card > p:not(.project-number) {
+.project-card > p {
   color: var(--muted);
 }
 
-.project-number {
-  margin-bottom: 2rem;
-}
-
 .tags {
-  display: flex;
+  display: block;
   margin: auto 0 1.5rem;
   padding: 1rem 0 0;
-  flex-wrap: wrap;
-  gap: .45rem;
+  color: #29466f;
+  font-family: var(--mono);
+  font-size: .76rem;
   list-style: none;
 }
 
 .tags li {
-  padding: .25rem .48rem;
-  border: 1px solid #cbd8ef;
-  border-radius: .25rem;
-  background: var(--accent-soft);
-  color: #29466f;
-  font-family: var(--mono);
-  font-size: .72rem;
+  display: inline;
+}
+
+.tags li:not(:last-child)::after {
+  content: " · ";
+  white-space: pre;
 }
 
 .text-link {
