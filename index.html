@@ -911,7 +911,21 @@
 
           <div class="contribution-grid">
             <article class="contribution-card">
-              <p><span class="status status-review">In review</span></p>
+              <p><span class="status status-merged">Merged</span></p>
+              <h3>
+                <a href="https://github.com/bazelbuild/bazel/pull/30852"
+                  >Bazel #30852</a
+                >
+              </h3>
+              <p>
+                Stops builds using
+                <code>--remote_download_outputs=toplevel</code> from re-fetching
+                outputs an earlier invocation had already downloaded.
+              </p>
+            </article>
+
+            <article class="contribution-card">
+              <p><span class="status status-review">Approved</span></p>
               <h3>
                 <a href="https://github.com/bazelbuild/bazel/pull/29758"
                   >Bazel #29758</a
@@ -921,6 +935,31 @@
                 Fixes <code>exclusive-if-local</code> incorrectly limiting
                 concurrency when actions use remote execution.
               </p>
+            </article>
+
+            <article class="contribution-card">
+              <p><span class="status status-review">In review</span></p>
+              <h3>
+                <a href="https://github.com/bazelbuild/bazel/pull/30959"
+                  >Bazel #30959</a
+                >
+              </h3>
+              <p>
+                Adds an opt-in parallel serialization path for
+                <code>bazel query --output=streamed_proto</code>, serializing
+                targets concurrently while preserving output order.
+              </p>
+            </article>
+
+            <article class="contribution-card">
+              <p><span class="status status-merged">Merged</span></p>
+              <h3>
+                <a
+                  href="https://github.com/bazelbuild/bazel-central-registry/pull/7538"
+                  >Bazel Central Registry #7538</a
+                >
+              </h3>
+              <p>Restores Pigz compatibility with Bazel 9.</p>
             </article>
 
             <article class="contribution-card">
@@ -934,17 +973,6 @@
                 Adds configurable directory and file permissions to JavaScript
                 image layers.
               </p>
-            </article>
-
-            <article class="contribution-card">
-              <p><span class="status status-merged">Merged</span></p>
-              <h3>
-                <a
-                  href="https://github.com/bazelbuild/bazel-central-registry/pull/7538"
-                  >Bazel Central Registry #7538</a
-                >
-              </h3>
-              <p>Restores Pigz compatibility with Bazel 9.</p>
             </article>
 
             <article class="contribution-card">
