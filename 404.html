@@ -6,15 +6,97 @@
   <title>Page not found — Justin Fernbaugh</title>
   <meta name="description" content="The requested page could not be found.">
   <meta name="robots" content="noindex">
-  <link rel="icon" href="favicon.ico" sizes="any">
-  <link rel="stylesheet" href="assets/v1/site.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/v1/images/favicon-32x32.png">
+  <style>
+    :root {
+      --background: #f7f8fa;
+      --ink: #10213b;
+      --muted: #526176;
+      --accent: #1557d6;
+      --accent-dark: #0b42ad;
+      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      --sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    body {
+      display: grid;
+      min-height: 100vh;
+      margin: 0;
+      place-items: center;
+      background: var(--background);
+      color: var(--ink);
+      font-family: var(--sans);
+      line-height: 1.65;
+    }
+
+    main {
+      width: min(100% - 2rem, 38rem);
+      padding-block: 4rem;
+    }
+
+    h1,
+    p {
+      margin-top: 0;
+    }
+
+    h1 {
+      margin-bottom: 1.5rem;
+      font-size: clamp(2.5rem, 10vw, 4.5rem);
+      font-weight: 750;
+      letter-spacing: -.025em;
+      line-height: 1.15;
+    }
+
+    .error-code {
+      margin-bottom: 1rem;
+      color: var(--accent);
+      font-family: var(--mono);
+      font-weight: 800;
+    }
+
+    h1 + p {
+      max-width: 30rem;
+      margin-bottom: 2rem;
+      color: var(--muted);
+      font-size: 1.1rem;
+    }
+
+    .button {
+      display: inline-flex;
+      min-height: 2.9rem;
+      padding: .7rem 1rem;
+      border: 1px solid var(--accent);
+      border-radius: .3rem;
+      align-items: center;
+      background: var(--accent);
+      color: #fff;
+      font-weight: 750;
+      text-decoration: none;
+    }
+
+    .button:hover {
+      border-color: var(--accent-dark);
+      background: var(--accent-dark);
+    }
+
+    .button:focus-visible {
+      outline: .2rem solid var(--accent);
+      outline-offset: .2rem;
+    }
+  </style>
 </head>
-<body class="error-page">
-  <main id="main-content" class="error-content shell">
+<body>
+  <main id="main-content">
     <p class="error-code">404 / Not found</p>
     <h1>This page isn’t here.</h1>
     <p>The address may have changed, or the page may no longer exist.</p>
-    <a class="button button-primary" href="./">Return to the portfolio</a>
+    <a class="button" href="./">Return to the portfolio</a>
   </main>
 </body>
 </html>
